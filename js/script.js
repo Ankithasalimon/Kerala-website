@@ -184,13 +184,13 @@ $(document).ready(function () {
         }
 
         if (strength < 21) {
-            renderResult(strength, 'danger')//red very weak password
+            renderResult(strength, 'poor')//red very weak password
         } else
             if (strength > 20 && strength < 41) {
-                renderResult(strength, 'warning')//orange weak password
+                renderResult(strength, 'medium')//orange weak password
             } else
                 if (strength > 40 && strength < 61) {
-                    renderResult(strength, 'secondary')//medium password
+                    renderResult(strength, 'secondary')//green medium password
                 } else
                     if (strength > 60 && strength < 81) {
                         renderResult(strength, 'info')// strong password

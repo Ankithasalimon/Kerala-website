@@ -1,8 +1,4 @@
-const initBg = (autoplay = true) => {
-   
-    const bgImgs = bgImgsNames.map(img => "img/" + img);
 
-    $.backstretch(bgImgs, {duration: 2000, fade: 1000});
 
     if(!autoplay) {
       $.backstretch('pause');  
